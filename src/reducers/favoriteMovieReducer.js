@@ -1,3 +1,5 @@
+import {TOGGLE_FAVORITES, ADD_FAVORITES, REMOVE_FAVORITES} from './../actions/favoriteActions'
+
 const initialState = {
     favorites: [],
     displayFavorites: true
@@ -24,6 +26,8 @@ const reducer = (state = initialState, action) => {
             }
         }
         default:
+
+
             return state;
     }
 }
